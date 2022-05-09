@@ -51,7 +51,6 @@ main {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -63,7 +62,6 @@ p {
 
  .btn {
   font-size: 1.3rem;
-  text-decoration:none;
   padding: 6px 5px;
   width: 100%;
   display: block;
@@ -73,8 +71,8 @@ p {
   border: none;
   outline: none;
   background-color: var(--light-dark);
-  /* box-shadow: 3px 3px var(--dark); */
   transform: translate(-1px, -1px);
+  text-decoration: none;
 }
 
  .btn:hover {
@@ -111,10 +109,18 @@ p {
   box-shadow: 2px 2px var(--dark);
 }
 
+.new-post {
+  width: 30%;
+  margin: auto;
+}
+
 .hero {
   padding: 3% 4%;
   background-color: var(--dark);
   color: var(--primary);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .hero p {
@@ -197,6 +203,7 @@ h4 {
 
 .login-link {
   color: var(--dark);
+  text-decoration: none;
 }
 
 .nav {
@@ -220,7 +227,7 @@ footer {
   display: block;
 }
 
-.login-form {
+.form {
   width: 60%;
 }
 
