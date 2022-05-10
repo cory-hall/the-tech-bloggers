@@ -1,11 +1,13 @@
-
+// init sequelize 
 const Sequelize = require('sequelize');
 
+// connection info in here, hidden from repo
 require('dotenv').config();
 
 
 let sequelize;
 
+// create connection both locally and for heroku
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

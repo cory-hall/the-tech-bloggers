@@ -1,10 +1,13 @@
+// delete a post
 async function deleteFormHandler(event) {
   event.preventDefault();
 
+  // get id from url (last char)
   const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
     
+    // use await for the api call
     const response = await fetch(`/api/posts/${id}`, {
       method: 'DELETE',
       body: JSON.stringify({

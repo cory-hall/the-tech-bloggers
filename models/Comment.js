@@ -1,8 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Comment extends Model{}
+// create Comment model, extend for Model methods
+class Comment extends Model { }
 
+// define table columns and configurations
 Comment.init(
   {
     id: {
@@ -35,6 +37,7 @@ Comment.init(
     }
   },
   {
+    // use the sequelize connection
     sequelize,
     freezeTableName: true,
     underscored: true,

@@ -1,11 +1,15 @@
+// create a new user
 async function signupFormHandler(event) {
   event.preventDefault();
 
-  // getting data from the form
+  // get username from webpage
   const username = document.querySelector('#username-signup').value.trim();
+  // get password from webpage
   const password = document.querySelector('#password-signup').value.trim();
 
+  // if both are truthy
   if (username && password) {
+    // use await for the api call
       const response = await fetch('/api/users', {
         method: 'POST',
         body: JSON.stringify({
@@ -14,11 +18,9 @@ async function signupFormHandler(event) {
         }),
         headers: { 'Content-Type': 'application/json' }
       }); 
-  // check the response status
   if (response.ok) {
       console.log('success');
 
-      // loginHandler();
       document.location.replace('/dashboard');
 
     } else {
