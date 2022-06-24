@@ -13,7 +13,7 @@
   - [License](#license)
 
   ## Installation
-  There is no installation necessary, simply visit [here](https://the-tech-bloggers.herokuapp.com/) to use the site.
+  There is no installation necessary, simply visit [here](https://the-tech-bloggers.herokuapp.com/) to see the site.
 
   ## Usage
   This app is hosted from Heroku and only requires you to create an account. Follow the above listed link to begin.
